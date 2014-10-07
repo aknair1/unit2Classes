@@ -29,6 +29,9 @@ public class Door
     *This is the current hieght of the the door
     */
     private int height;
+    /**
+     * Default constructor for objects of class Door that initializes the position and size
+     */
     public Door(int x, int y, int width, int height)
     {
         this.x = x;

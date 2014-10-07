@@ -22,7 +22,7 @@ public class CityscapeComponent extends JComponent
      * @post    It changes the cloudx variable based on the parameters
      * @param    y    description of parameter y
      */
-    public void change(int cloudx){
+    public void set(int cloudx){
         this.cloudx = cloudx;       
     }
     public void paintComponent(Graphics g) 

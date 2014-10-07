@@ -52,6 +52,9 @@ public class Building
     *This is the current width of the the sidewalk and the building
     */
     private int otherw;
+    /**
+     * Default constructor for objects of class Building that initializes the position and size of the door, sidewalk, and building
+     */
     public  Building(int x, int width, int height, int otherw, int doorh)
     {
         this.x = x;

@@ -28,6 +28,9 @@ public class Sky
     *This is the current hieght of the the sky
     */
     private int height;
+    /**
+     * Default constructor for objects of class Sky that initializes the position and size
+     */
     public Sky(int x, int y, int width, int height)
     {
         this.x = x;

@@ -53,7 +53,8 @@ public class Cloud
     */
     private int difference;  
     /**
-     * Constructor for objects of class Cloud
+     * Constructor for objects of class Cloud that initializes positions and sizes of the two circles and the ratio
+     * and difference of the two circles
      */
     public Cloud(int x, int y, int w, int h,  double ratio, int difference)
     {
