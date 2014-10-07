@@ -6,30 +6,41 @@ import javax.swing.JComponent;
  * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
  *  cityscape to these object.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author @aknair
+ * @version 6 October 2014
  */
-public class CityscapeComponent extends JComponent
+public class CityscapeComponent extends JComponent 
 {
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+    *This is the current x position of the cloud
+    */
+    private int cloudx;
+    /**
+     * This method changes the instance variable cloudx
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
+     * @pre        It needs a defined instance variable cloudx
+     * @post    It changes the cloudx variable based on the parameters
      * @param    y    description of parameter y
-     * @return    description of the return value
      */
-    public void paintComponent(Graphics g)
+    public void change(int cloudx){
+        this.cloudx = cloudx;       
+    }
+    public void paintComponent(Graphics g) 
     {
         Graphics2D g2 = (Graphics2D) g;
-        
-        // create instances of classes and invoke the draw method on each
-        // ...
-        
-        
+        Grass grass = new Grass(0,400,800,200);
+        Sky sky = new Sky(0,0,800,600);
+        Building building1 = new Building(100,100,200,20,30);
+        Building building2 = new Building(300,74,165,25,26);
+        Building building3 = new Building(500,110,234,15,22);
+        Road road = new Road(0,450,800,40,10,465,17,10);
+        Cloud cloud = new Cloud(cloudx, 60, 123, 76, .7,60);
+        sky.draw(g2);        
+        grass.draw(g2);                   
+        building1.draw(g2);
+        building2.draw(g2);
+        building3.draw(g2);
+        cloud.draw(g2);
+        road.draw(g2);
     }
-
 }
