@@ -27,7 +27,7 @@ public class Marker
     private int height;
 
     /**
-     * Default constructor for objects of class Marker that initializes the y position and the size
+     * Default constructor for objects of class Marker
      */
     public Marker(int y, int width, int height)
     {

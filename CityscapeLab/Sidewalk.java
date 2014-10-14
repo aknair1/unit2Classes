@@ -28,9 +28,6 @@ public class Sidewalk
     *This is the current height of the the sidewalk
     */
     private int height;
-    /**
-     * Default constructor for objects of class Sidewalk that initializes the position and size
-     */
     public  Sidewalk(int x, int y, int width, int height)
     {
         this.x = x;

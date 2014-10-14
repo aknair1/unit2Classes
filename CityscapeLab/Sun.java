@@ -26,7 +26,7 @@ public class Sun
     private int radius;
 
     /**
-     * Default constructor for objects of class Sun that initializes the position and radius
+     * Default constructor for objects of class Sun
      */
     public Sun(int x, int y, int radius)
     {

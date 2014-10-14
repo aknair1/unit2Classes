@@ -47,7 +47,7 @@ public class Road
     private int markerh;
 
     /**
-     * Default constructor for objects of class Road that initializes the position and size for both the marker and the road
+     * Default constructor for objects of class Road
      */
     public Road(int x, int y, int width, int height,int markerx, int markery, int markerw, int markerh)
     {

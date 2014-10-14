@@ -28,9 +28,6 @@ public class Grass
     *This is the current hieght of the the grass
     */
     private int height;
-    /**
-     * Default constructor for objects of class Grass that initializes the position and size
-     */
     public Grass(int x, int y, int width, int height)
     {
         this.x = x;
